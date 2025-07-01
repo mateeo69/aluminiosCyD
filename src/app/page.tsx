@@ -174,10 +174,10 @@ export default function Component() {
                   +15 años de experiencia
                 </Badge>
               </div>
-              <h1 className="text-3xl lg:text-6xl font-bold text-gray-900 mb-6 text-center lg:text-left">
+              <h1 className="text-2xl lg:text-6xl font-bold text-gray-900 mb-6 text-center lg:text-left">
                 Cristalería y Aluminios de
                 <br className="block" />
-                <span className="text-orange-500 lg:text-6xl"> Calidad superior</span>
+                <span className="text-orange-500 text-3xl"> Calidad superior</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 text-center lg:text-left">
                 Especialistas en fabricación e instalación de ventanas, puertas, fachadas y estructuras de aluminio con
