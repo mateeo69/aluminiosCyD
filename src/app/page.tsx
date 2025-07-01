@@ -281,7 +281,7 @@ export default function Component() {
       </section>
 
       {/* Servicios */}
-      <section id="servicios" className="py-20 bg-gray-50">
+      <section id="servicios" className="bg-gradient-to-br from-orange-50 to-gray-100 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Nuestros servicios</h2>
@@ -375,7 +375,7 @@ export default function Component() {
       </section>
 
       {/* Formulario de Contacto */}
-      <section id="contacto" className="py-20 bg-gray-50">
+      <section id="contacto" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Contáctanos</h2>
@@ -428,7 +428,7 @@ export default function Component() {
                 </div>
               </div>
 
-              <div className="bg-orange-50 p-6 rounded-xl">
+              <div className="bg-orange-100 p-6 rounded-xl">
                 <h4 className="font-semibold text-gray-900 mb-2">¿Por qué elegirnos?</h4>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-center space-x-2">
