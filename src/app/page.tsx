@@ -177,8 +177,6 @@ export default function Component() {
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 text-center lg:text-left">
                 Cristalería y Aluminios
                 <br className="block lg:hidden" />
-                de
-                <br className="block lg:hidden" />
                 <span className="text-orange-500"> Calidad superior</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 text-center lg:text-left">
