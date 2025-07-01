@@ -175,8 +175,9 @@ export default function Component() {
                 </Badge>
               </div>
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 text-center lg:text-left">
-                Cristalería y Aluminios de
+                Cristalería y Aluminios
                 <br className="block lg:hidden" />
+                de
                 <span className="text-orange-500"> Calidad superior</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 text-center lg:text-left">
