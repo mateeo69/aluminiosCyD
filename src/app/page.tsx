@@ -141,8 +141,8 @@ export default function Component() {
 
           {/* Mobile Navigation */}
           {isMenuOpen && (
-            <div className="md:hidden py-4 border-t">
-              <nav className="flex flex-col space-y-4">
+            <div className="md:hidden py-4 border-t flex justify-center">
+              <nav className="flex flex-col items-center space-y-4">
                 <Link href="#inicio" className="text-gray-700 hover:text-orange-500 font-medium">
                   Inicio
                 </Link>
@@ -169,12 +169,16 @@ export default function Component() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="mb-4 bg-orange-100 text-orange-800 hover:bg-orange-400">+15 años de experiencia</Badge>
-              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+              <div className="flex justify-center lg:justify-start">
+                <Badge className="mb-4 bg-orange-100 text-orange-800 hover:bg-orange-400">
+                  +15 años de experiencia
+                </Badge>
+              </div>
+              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 text-center lg:text-left">
                 Cristalería y Aluminios de
                 <span className="text-orange-500"> Calidad superior</span>
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-xl text-gray-600 mb-8 text-center lg:text-left">
                 Especialistas en fabricación e instalación de ventanas, puertas, fachadas y estructuras de aluminio con
                 cristal templado. Calidad garantizada y servicio profesional.
               </p>
@@ -234,7 +238,7 @@ export default function Component() {
             </div>
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Nuestra historia</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center lg:text-left">Nuestra historia</h3>
                 <p className="text-gray-600 mb-4">
                   Cristalería y Aluminios CyD nació en 2008 con la visión de ofrecer soluciones integrales en
                   cristalería y estructuras de aluminio. Comenzamos como un pequeño taller familiar y hoy somos
@@ -257,24 +261,25 @@ export default function Component() {
                 </div>
               </div>
 
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3">
+              <div className="space-y-3 text-center lg:text-left">
+                <div className="flex items-center justify-center lg:justify-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-green-600" />
                   <span className="text-gray-700">Materiales de primera calidad</span>
                 </div>
-                <div className="flex items-center space-x-3">
+                <div className="flex items-center justify-center lg:justify-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-green-600" />
                   <span className="text-gray-700">Equipo técnico especializado</span>
                 </div>
-                <div className="flex items-center space-x-3">
+                <div className="flex items-center justify-center lg:justify-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-green-600" />
                   <span className="text-gray-700">Garantía en todos nuestros trabajos</span>
                 </div>
-                <div className="flex items-center space-x-3">
+                <div className="flex items-center justify-center lg:justify-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-green-600" />
                   <span className="text-gray-700">Atención personalizada</span>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -375,7 +380,7 @@ export default function Component() {
       </section>
 
       {/* Formulario de Contacto */}
-      <section id="contacto" className="py-20">
+      <section id="contacto" className="py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Contáctanos</h2>
@@ -386,26 +391,25 @@ export default function Component() {
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Información de Contacto */}
-            <div className="space-y-8">
+            <div className="space-y-8 text-center lg:text-left">
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Información de Contacto</h3>
                 <div className="space-y-4">
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-orange-100 p-3 rounded-lg">
+                  <div className="flex flex-col items-center lg:flex-row lg:items-start lg:space-x-4">
+                    <div className="bg-orange-100 p-3 rounded-lg mb-2 lg:mb-0">
                       <MapPin className="h-6 w-6 text-orange-500" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">Dirección</h4>
                       <p className="text-gray-600">
-                        Av. Principal #123, Col. Centro
-                        <br />
+                        Av. Principal #123, Col. Centro<br />
                         Ciudad, Estado, CP 12345
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-orange-100 p-3 rounded-lg">
+                  <div className="flex flex-col items-center lg:flex-row lg:items-start lg:space-x-4">
+                    <div className="bg-orange-100 p-3 rounded-lg mb-2 lg:mb-0">
                       <Phone className="h-6 w-6 text-orange-500" />
                     </div>
                     <div>
@@ -415,8 +419,8 @@ export default function Component() {
                     </div>
                   </div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-orange-100 p-3 rounded-lg">
+                  <div className="flex flex-col items-center lg:flex-row lg:items-start lg:space-x-4">
+                    <div className="bg-orange-100 p-3 rounded-lg mb-2 lg:mb-0">
                       <Mail className="h-6 w-6 text-orange-500" />
                     </div>
                     <div>
@@ -427,6 +431,7 @@ export default function Component() {
                   </div>
                 </div>
               </div>
+
 
               <div className="bg-orange-100 p-6 rounded-xl">
                 <h4 className="font-semibold text-gray-900 mb-2">¿Por qué elegirnos?</h4>
@@ -452,7 +457,7 @@ export default function Component() {
             </div>
 
             {/* Formulario */}
-            <Card>
+            <Card className="h-fit self-start">
               <CardHeader>
                 <CardTitle>Solicita tu Cotización</CardTitle>
                 <CardDescription>Completa el formulario y te contactaremos en menos de 24 horas</CardDescription>
@@ -547,21 +552,18 @@ export default function Component() {
       {/* Footer */}
       <footer className="bg-neutral-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="md:col-span-2">
-              <div className="flex items-center space-x-2 mb-4">
+          <div className="grid md:grid-cols-4 gap-8 text-center md:text-left">
+            <div className="md:col-span-2 space-y-4">
+              <div className="flex justify-center md:justify-start items-center space-x-2">
                 <div className="bg-orange-500 p-2 rounded-lg">
                   <Building2 className="h-6 w-6 text-white" />
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold">Cristalería y Aluminios CyD</h3>
-                </div>
+                <h3 className="text-xl font-bold">Cristalería y Aluminios CyD</h3>
               </div>
-              <p className="text-gray-400 mb-4 max-w-md">
-                Especialistas en cristalería y estructuras de aluminio con más de 15 años de experiencia. Calidad
-                garantizada en cada proyecto.
+              <p className="text-gray-400 max-w-md mx-auto md:mx-0">
+                Especialistas en cristalería y estructuras de aluminio con más de 15 años de experiencia. Calidad garantizada en cada proyecto.
               </p>
-              <div className="flex space-x-4">
+              <div className="flex justify-center md:justify-start space-x-4">
                 <div className="bg-orange-500 p-2 rounded-lg">
                   <Phone className="h-5 w-5" />
                 </div>
@@ -602,6 +604,7 @@ export default function Component() {
           </div>
         </div>
       </footer>
+
     </div>
   )
 }
